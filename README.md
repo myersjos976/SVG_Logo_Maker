@@ -1,7 +1,8 @@
 # SVG_Logo_Maker
 
 ## Description
-Challenge 09 Assignment for Coding Bootcamp. Creates a README generator from user answers to prompts from the terminal. The terminal takes these responses and creates a README file for the user.
+About
+Challenge 10 Assignment for Coding Bootcamp. Creates a program that makes SVG logos using user input.
 
 ## Video
 
