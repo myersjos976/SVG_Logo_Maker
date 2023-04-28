@@ -8,10 +8,10 @@ Challenge 10 Assignment for Coding Bootcamp. Creates a program that makes SVG lo
 
 
 ## Table of Contents
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [Credits](#Credits)
-- [License](#License)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
 
 ## Installation
 1) Install node.js  
