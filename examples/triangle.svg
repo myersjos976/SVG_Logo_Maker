@@ -1,0 +1,16 @@
+        <svg width="300" height="200">
+            <!-- Specifies font family -->
+            <font>
+                <font-face font-family="Super Sans">
+                    <font-face-src>
+                        <font-face-uri xlink:href="fonts.svg#Super_Sans" />
+                    </font-face-src>
+                </font-face>
+            </font>
+
+            <!-- Creates a Triangel -->
+            <polygon points="150 20, 230 150, 70 150" fill="Orange" fill-opacity="1.0"/>
+
+            <!-- Creates text -->
+            <text font-family="Super Sans" font-weight="bold" font-size="30px" fill="white" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">JTM</text>
+        </svg>

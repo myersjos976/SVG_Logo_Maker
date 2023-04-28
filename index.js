@@ -1,7 +1,7 @@
 // Required packages
 const inquirer = require('inquirer');
 const fs = require('fs');
-const shape = require('./lib/shapes.js');
+const Logo = require('./lib/shapes.js');
 
 // Array of shapes for user to choose from.
 const shapesList = [
@@ -13,9 +13,9 @@ const shapesList = [
 // Array of questions for user to answer.
 const questions = [
     "Enter text (up to 3 characters):",
-    "Enter text's color:",
-    "Enter a shape form the list below:",
-    "Enter shape's color:"
+    "Enter text's color (word or hexcode):",
+    "Enter a shape from the list below:",
+    "Enter shape's color (word or hexcode):"
 ];
 
 // Array of responses from user.
@@ -25,13 +25,13 @@ const responses = [];
 function writeToFile(fileName, data)
  {
     fs.writeFile(fileName + "/Logo.svg", data, (err) =>
-    err ? console.error(err) : console.log('SUCCESS! Logo created') 
+    err ? console.error(err) : console.log('Generated logo.svg') 
     );
  }
 
 /*
  Intializes SVG Logo Maker
- Calls generateMarkdown function from generateMarkdown.js
+ Calls generateLogo() function from Logo object.
 */
 function init() 
 {
@@ -68,14 +68,12 @@ function init()
             },
         ])
         .then((response) => 
-            writeToFile(response.fileLocation, shape.generateLogo(
-                [
-                    response.text, 
-                    response.textColor, 
-                    response.shape, 
-                    response.shapeColor 
-                ]
-            )),
+            writeToFile(response.fileLocation, new Logo(                
+                response.text, 
+                response.textColor, 
+                response.shape, 
+                response.shapeColor 
+            ).generateLogo()),
             (err) =>
                 err ? console.error(err) : console.log('SUCCESS!')
         );
