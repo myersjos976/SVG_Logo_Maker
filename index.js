@@ -1,7 +1,7 @@
 // Required packages
 const inquirer = require('inquirer');
 const fs = require('fs');
-const Logo = require('./lib/shapes.js');
+const Logo = require('./lib/logo.js');
 
 // Array of shapes for user to choose from.
 const shapesList = [
