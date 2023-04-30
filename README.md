@@ -5,7 +5,7 @@ About
 Challenge 10 Assignment for Coding Bootcamp. Creates a program that makes SVG logos using user input.
 
 ## Video
-
+https://drive.google.com/file/d/1MH9PGFA99HsRbdbUb2cI0Skmh_BDExLb/view?usp=sharing
 
 ## Table of Contents
 - [Installation](#installation)
